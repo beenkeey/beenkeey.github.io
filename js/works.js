@@ -6,7 +6,7 @@
  * 2. Впишите путь в src и короткое описание в alt.
  * 3. Поля:
  *    title    — подпись под карточкой
- *    category — "clothing" (одежда) или "painting" (открытка)
+ *    category — "painting" (роспись), "embroidery" (вышивка) или "miniature" (миниатюры)
  *    span     — ширина на большом экране, от 4 до 8 (в сумме ряд стремится к 12)
  *    ratio    — "portrait", "landscape" или "tall"
  *    shift    — true, если карточку нужно опустить чуть ниже соседней
@@ -16,15 +16,15 @@
  */
 const WORKS = [
   {
-    title: "Одежда",
-    category: "clothing",
+    title: "Роспись",
+    category: "painting",
     src: "",
     alt: "",
     span: "7",
     ratio: "landscape",
   },
   {
-    title: "Открытка",
+    title: "Роспись",
     category: "painting",
     src: "",
     alt: "",
@@ -33,36 +33,61 @@ const WORKS = [
     shift: true,
   },
   {
-    title: "Одежда",
-    category: "clothing",
+    title: "Роспись",
+    category: "painting",
     src: "",
     alt: "",
     span: "4",
     ratio: "tall",
   },
   {
-    title: "Открытка",
-    category: "painting",
-    src: "",
-    alt: "",
-    span: "8",
-    ratio: "landscape",
-  },
-  {
-    title: "Одежда",
-    category: "clothing",
+    title: "Вышивка",
+    category: "embroidery",
     src: "",
     alt: "",
     span: "5",
     ratio: "portrait",
-    shift: true,
   },
   {
-    title: "Открытка",
-    category: "painting",
+    title: "Вышивка",
+    category: "embroidery",
     src: "",
     alt: "",
     span: "7",
     ratio: "landscape",
+    shift: true,
+  },
+  {
+    title: "Вышивка",
+    category: "embroidery",
+    src: "",
+    alt: "",
+    span: "6",
+    ratio: "portrait",
+  },
+  {
+    title: "Миниатюра",
+    category: "miniature",
+    src: "",
+    alt: "",
+    span: "5",
+    ratio: "portrait",
+  },
+  {
+    title: "Миниатюра",
+    category: "miniature",
+    src: "",
+    alt: "",
+    span: "7",
+    ratio: "landscape",
+    shift: true,
+  },
+  {
+    title: "Миниатюра",
+    category: "miniature",
+    src: "",
+    alt: "",
+    span: "4",
+    ratio: "tall",
   },
 ];

@@ -17,14 +17,16 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <a class="skip" href="#works">К работам</a>
+    <a class="skip" href="#painting">К росписи</a>
 
     <header class="header" id="top">
       <div class="header__inner">
         <a class="logo" href="#top"></a>
 
         <nav class="nav" aria-label="Разделы">
-          <a href="#studio">Мастерская</a>
+          <a href="#painting">Роспись</a>
+          <a href="#embroidery">Вышивка</a>
+          <a href="#miniature">Миниатюры</a>
         </nav>
 
         <div class="header__right">
@@ -68,9 +70,9 @@
         </div>
 
         <div class="hero__bottom">
-          <p class="hero__lead">Мне хочется, чтобы даже самые простые вещи могли вызывать улыбку. Поэтому каждую одежду я расписываю вручную, а каждую открытку рисую с особой заботой. Здесь нет случайных деталей и повторяющихся работ — только то, во что вложены время, вдохновение и частичка меня.</p>
+          <p class="hero__lead" >Создаю одежду из ваших фантазий. Каждая вещь расписана мной с огромным трепетом и любовью. Здесь нет случайных деталей и идентичных работ, только уникальность и стиль</p>
           <div class="hero__actions">
-            <a class="btn btn--wine" href="#works">Смотреть работы</a>
+            <a class="btn btn--wine" href="#painting">Смотреть роспись</a>
             <a class="btn btn--ghost" href="#order">Заказать вещь</a>
           </div>
         </div>
@@ -78,64 +80,60 @@
 
       <div class="marquee" aria-hidden="true">
         <div class="marquee__track">
-          <p>роспись одежды&nbsp;&nbsp;·&nbsp;&nbsp;открытки&nbsp;&nbsp;·&nbsp;&nbsp;одна вещь&nbsp;&nbsp;·&nbsp;&nbsp;ручная работа&nbsp;&nbsp;·&nbsp;&nbsp;на заказ&nbsp;&nbsp;·&nbsp;&nbsp;роспись одежды&nbsp;&nbsp;·&nbsp;&nbsp;открытки&nbsp;&nbsp;·&nbsp;&nbsp;одна вещь&nbsp;&nbsp;·&nbsp;&nbsp;ручная работа&nbsp;&nbsp;·&nbsp;&nbsp;на заказ&nbsp;&nbsp;·&nbsp;&nbsp;роспись одежды&nbsp;&nbsp;·&nbsp;&nbsp;открытки&nbsp;&nbsp;·&nbsp;&nbsp;одна вещь&nbsp;&nbsp;·&nbsp;&nbsp;ручная работа&nbsp;&nbsp;·&nbsp;&nbsp;на заказ&nbsp;&nbsp;·&nbsp;&nbsp;</p>
-          <p>роспись одежды&nbsp;&nbsp;·&nbsp;&nbsp;открытки&nbsp;&nbsp;·&nbsp;&nbsp;одна вещь&nbsp;&nbsp;·&nbsp;&nbsp;ручная работа&nbsp;&nbsp;·&nbsp;&nbsp;на заказ&nbsp;&nbsp;·&nbsp;&nbsp;роспись одежды&nbsp;&nbsp;·&nbsp;&nbsp;открытки&nbsp;&nbsp;·&nbsp;&nbsp;одна вещь&nbsp;&nbsp;·&nbsp;&nbsp;ручная работа&nbsp;&nbsp;·&nbsp;&nbsp;на заказ&nbsp;&nbsp;·&nbsp;&nbsp;роспись одежды&nbsp;&nbsp;·&nbsp;&nbsp;открытки&nbsp;&nbsp;·&nbsp;&nbsp;одна вещь&nbsp;&nbsp;·&nbsp;&nbsp;ручная работа&nbsp;&nbsp;·&nbsp;&nbsp;на заказ&nbsp;&nbsp;·&nbsp;&nbsp;</p>
+          <p>роспись&nbsp;&nbsp;·&nbsp;&nbsp;вышивка&nbsp;&nbsp;·&nbsp;&nbsp;миниатюры&nbsp;&nbsp;·&nbsp;&nbsp;ручная работа&nbsp;&nbsp;·&nbsp;&nbsp;на заказ&nbsp;&nbsp;·&nbsp;&nbsp;роспись&nbsp;&nbsp;·&nbsp;&nbsp;вышивка&nbsp;&nbsp;·&nbsp;&nbsp;миниатюры&nbsp;&nbsp;·&nbsp;&nbsp;ручная работа&nbsp;&nbsp;·&nbsp;&nbsp;на заказ&nbsp;&nbsp;·&nbsp;&nbsp;роспись&nbsp;&nbsp;·&nbsp;&nbsp;вышивка&nbsp;&nbsp;·&nbsp;&nbsp;миниатюры&nbsp;&nbsp;·&nbsp;&nbsp;на заказ&nbsp;&nbsp;·&nbsp;&nbsp;</p>
+          <p>роспись&nbsp;&nbsp;·&nbsp;&nbsp;вышивка&nbsp;&nbsp;·&nbsp;&nbsp;миниатюры&nbsp;&nbsp;·&nbsp;&nbsp;ручная работа&nbsp;&nbsp;·&nbsp;&nbsp;на заказ&nbsp;&nbsp;·&nbsp;&nbsp;роспись&nbsp;&nbsp;·&nbsp;&nbsp;вышивка&nbsp;&nbsp;·&nbsp;&nbsp;миниатюры&nbsp;&nbsp;·&nbsp;&nbsp;ручная работа&nbsp;&nbsp;·&nbsp;&nbsp;на заказ&nbsp;&nbsp;·&nbsp;&nbsp;роспись&nbsp;&nbsp;·&nbsp;&nbsp;вышивка&nbsp;&nbsp;·&nbsp;&nbsp;миниатюры&nbsp;&nbsp;·&nbsp;&nbsp;на заказ&nbsp;&nbsp;·&nbsp;&nbsp;</p>
         </div>
       </div>
 
-      <section class="section works" id="works">
+      <section class="section works" id="painting">
         <div class="works__head">
           <div>
             <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span>галерея</p>
-            <h2>Работы</h2>
+            <h2>Роспись</h2>
           </div>
           <div class="works__side">
-            <p class="works__note">Роспись по одежде и маленькие открытки. Всё, что появляется здесь, сделано руками и больше не повторяется.</p>
-            <div class="filters" role="group" aria-label="Фильтр работ">
-              <button type="button" data-filter="all" aria-pressed="true">Все</button>
-              <button type="button" data-filter="clothing" aria-pressed="false">Одежда</button>
-              <button type="button" data-filter="painting" aria-pressed="false">Открытки</button>
-            </div>
+            <p class="works__note">Одежда, расписанная вручную. Каждая вещь — одна, без повторов. Время изготовления заказа — от 1 месяца.</p>
           </div>
         </div>
-
-        <!-- Карточки собираются из js/works.js -->
-        <div class="gallery" data-gallery></div>
+        <div class="gallery" data-gallery="painting"></div>
         <p class="gallery__empty" data-empty hidden>В этом разделе работы появятся совсем скоро.</p>
       </section>
 
-      <section class="section studio" id="studio">
-        <div class="studio__top">
+      <section class="section works" id="embroidery">
+        <div class="works__head">
           <div>
-            <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span>мастерская</p>
-            <h2>Одежда и&nbsp;открытки</h2>
+            <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span>галерея</p>
+            <h2>Вышивка</h2>
           </div>
-          <blockquote class="studio__quote">
-            <p>Не принт из каталога. Рисунок, который есть только у вас.</p>
-          </blockquote>
+          <div class="works__side">
+            <p class="works__note">Ручная вышивка на одежде и аксессуарах. Стежок за стежком — только ваш вариант.  Время изготовления заказа — до 1 месяца</p>
+          </div>
         </div>
+        <div class="gallery" data-gallery="embroidery"></div>
+        <p class="gallery__empty" data-empty hidden>В этом разделе работы появятся совсем скоро.</p>
+      </section>
 
-        <ul class="offers">
-          <li>
-            <span class="offers__num">01</span>
-            <h3>Роспись одежды</h3>
-            <p>Куртки, деним, худи, платья. Можно принести свою вещь или собрать новую под рисунок. Краска ложится по крою и по тому, как вещь сидит.</p>
-          </li>
-          <li>
-            <span class="offers__num">02</span>
-            <h3>Открытки</h3>
-            <p>Маленькие картинки, чаще всего открытки. Обычно до 10×10 см — в подарок или просто так. Достаточно настроения, референса или одной фразы.</p>
-          </li>
-        </ul>
+      <section class="section works" id="miniature">
+        <div class="works__head">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span>галерея</p>
+            <h2>Миниатюры</h2>
+          </div>
+          <div class="works__side">
+            <p class="works__note">Маленькие картинки и открытки — в подарок или просто так.  Время изготовления заказа — до 2х недель</p>
+          </div>
+        </div>
+        <div class="gallery" data-gallery="miniature"></div>
+        <p class="gallery__empty" data-empty hidden>В этом разделе работы появятся совсем скоро.</p>
       </section>
 
       <section class="order" id="order">
         <p class="order__watermark" aria-hidden="true">слухи</p>
         <div class="order__grid">
           <div class="order__intro">
-            <p class="eyebrow eyebrow--light"><span class="eyebrow__line" aria-hidden="true"></span>заказ</p>
-            <h2>Напишите, какая вещь нужна.</h2>
-            <p class="order__lead">Telegram или Instagram — как удобнее. Расскажите, что хотите, для кого и какие цвета близки. Дальше договоримся об эскизе.</p>
+            <h2>Напишите нам для заказа</h2>
+              <br>
+              <br>
             <div class="order__actions">
               <a class="btn btn--cream" href="https://t.me/VoiceOFsilencE_0" target="_blank" rel="noopener noreferrer">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
@@ -152,32 +150,13 @@
                 Instagram
               </a>
             </div>
-            <p class="order__handle">@muchkinavasilina</p>
+
           </div>
 
-          <ol class="steps">
-            <li>
-              <span>01</span>
-              <div>
-                <h3>Идея</h3>
-                <p>Одежда или открытка, для кого она и какое настроение должно остаться.</p>
-              </div>
-            </li>
-            <li>
-              <span>02</span>
-              <div>
-                <h3>Эскиз</h3>
-                <p>Размер, ткань или формат, цвета и срок. Рисунок согласуем до работы.</p>
-              </div>
-            </li>
-            <li>
-              <span>03</span>
-              <div>
-                <h3>Вещь</h3>
-                <p>Одна. Такую больше ни у кого не будет.</p>
-              </div>
-            </li>
-          </ol>
+          <blockquote class="order__promise">
+            <p>Обсудим детали, подберём цвета и материалы, вместе проработаем идею и создадим эскиз, который станет основой вашей будущей вещи.</p>
+            <span class="order__promise-line" aria-hidden="true"></span>
+          </blockquote>
         </div>
       </section>
     </main>
@@ -185,7 +164,7 @@
     <footer class="footer">
       <div class="footer__inner">
         <a class="footer__logo" href="#top">Слухи</a>
-        <p>роспись одежды и открытки</p>
+        <p>роспись, вышивка и миниатюры</p>
         <div class="footer__links">
           <a href="https://t.me/VoiceOFsilencE_0" target="_blank" rel="noopener noreferrer">Telegram</a>
           <a href="https://www.instagram.com/muchkinavasilina/" target="_blank" rel="noopener noreferrer">Instagram</a>
